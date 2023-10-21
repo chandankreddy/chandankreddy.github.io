@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
@@ -32,28 +31,53 @@ ul li { padding: 3px 0px; }
 <div id="toptitle">
 <h1>Publications</h1>
 </div>
-<ul>
-<!-- You can dynamically add publications here using JavaScript -->
+<ul id="publications">
 </ul>
 </td>
 </tr>
 </table>
 <script>
+// Function to extract the publication year from the file name
+function extractYear(fileName) {
+    const matches = fileName.match(/(\d{2})$/); // Extract the last 2 digits
+    if (matches && matches.length > 1) {
+        return '20' + matches[1]; // Assuming the year format is 2 digits (e.g., '23' for 2023)
+    }
+    return '';
+}
+
+// Function to load and populate publications
 function loadPublications() {
-    fetch('get_publications.php')
-        .then(response => response.json())
+    fetch('files/publications') // Assuming 'publications' is the common part of your publication file names
+        .then(response => response.text())
         .then(data => {
-            // Sort publications by year
-            data.sort((a, b) => b.year - a.year);
+            const fileNames = data.split('\n'); // Split the file names into an array
+
+            // Create an object to group publications by year
+            const publicationsByYear = {};
+
+            // Iterate through file names
+            fileNames.forEach(fileName => {
+                const year = extractYear(fileName);
+                if (year) {
+                    if (!publicationsByYear[year]) {
+                        publicationsByYear[year] = [];
+                    }
+                    publicationsByYear[year].push(fileName);
+                }
+            });
 
             // Create HTML to display publications
-            let publicationsHTML = "<ul>";
-            for (const publication of data) {
-                publicationsHTML += `<li>${publication.year}: ${publication.title}</li>`;
+            let publicationsHTML = '';
+            for (const year in publicationsByYear) {
+                publicationsHTML += `<li>${year}:</li><ul>`;
+                publicationsByYear[year].forEach(fileName => {
+                    publicationsHTML += `<li>${fileName}</li>`;
+                });
+                publicationsHTML += '</ul>';
             }
-            publicationsHTML += "</ul>";
 
-            document.querySelector('#layout-content ul').innerHTML = publicationsHTML;
+            document.getElementById('publications').innerHTML = publicationsHTML;
         })
         .catch(error => {
             console.error(error);
