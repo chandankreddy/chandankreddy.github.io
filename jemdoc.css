@@ -10,7 +10,15 @@ body {
 	background: white;
 	font-family: Georgia, serif;
 	padding-bottom: 8px;
-	margin: 0;
+	width:1500px;
+	height:850px;
+	/*margin: 0 auto;*/
+  margin: 0;
+  max-width: 70%;
+  /*min-width: 70%;*/
+  /*border-left: 1px solid black;*/
+  /*border-right: 1px solid black;*/
+  /*background: grey;*/
 }
 
 #layout-menu {
@@ -24,7 +32,6 @@ body {
 	white-space: nowrap;
     text-align: left;
     vertical-align: top;
-    height: 97vh;
 }
 
 #layout-menu td {
