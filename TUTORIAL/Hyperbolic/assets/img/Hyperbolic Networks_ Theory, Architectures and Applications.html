@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#overview -->
+<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Tutorial on Hyperbolic Networks: Theory, Architectures and Applications. To be presented at 
+        TheWebConf 2022.">
+        <meta name="author" content="Nurendra Choudhary">
+        <title>Hyperbolic Networks: Theory, Architectures and Applications</title>
+        <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fad.fa-inverse{color:#fff}</style><link rel="icon" type="image/x-icon" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/assets/img/favicon.ico">
+        <!-- Font Awesome icons (free version)-->
+        <link rel="stylesheet" href="./Hyperbolic Networks_ Theory, Architectures and Applications_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <script src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="./Hyperbolic Networks_ Theory, Architectures and Applications_files/css(1)" rel="stylesheet" type="text/css">
+        <link href="./Hyperbolic Networks_ Theory, Architectures and Applications_files/css(2)" rel="stylesheet" type="text/css">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="./Hyperbolic Networks_ Theory, Architectures and Applications_files/styles.css" rel="stylesheet">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#overview">Tutorial Overview</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#teaser">Introduction Video</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#speakers">Speakers</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#schedule">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#tree">Topic Tree</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#resources">Resources</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li> -->
+                </ul>
+            </div>
+            <span class="d-block d-lg-none">Virginia Tech</span>
+            <span class="d-none d-lg-block" style="background-color: rgb(300, 300, 300)" ;=""><img class="img-fluid img-profile mx-auto mb-2" src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/vt.png" width="70%" alt="Virginia Tech"></span>
+            <span class="d-block d-lg-none">Amazon</span>
+            <span class="d-none d-lg-block" style="background-color: rgb(300, 300, 300)" ;=""><img class="img-fluid img-profile mx-auto mb-2" src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/amazon.png" width="60%" alt="Amazon"></span>
+            <span class="d-block d-lg-none">TheWebConf22</span>
+            <span class="d-none d-lg-block" style="background-color: rgb(300, 300, 300)" ;=""><img class="img-fluid img-profile mx-auto mb-2" src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/twc22.png" width="70%" alt="TheWebConf22"></span>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <section class="resume-section" id="overview">
+                <div class="resume-section-content">
+                    <h2 class="mb-0">
+                        Hyperbolic Networks:<br>
+                        <span class="text-primary">Theory, Architectures and Applications</span>
+                    </h2>
+                    <div class="subheading mb-5">
+                        Tutorial @ <a href="https://www2022.thewebconf.org/">TheWebconf 2022</a> · Online · Time and Link: TBD ·
+                        <!-- <a href="mailto:name@email.com">name@email.com</a> -->
+                    </div>
+                    <p class="lead mb-5">Graphs are ubiquitous data-structures that are widely-used in a
+                        number of data storage scenarios, including social networks, recommender systems, 
+                        knowledge graphs and e-commerce. This has led to a rise of GNN architectures to 
+                        analyze and encode information from the graphs for better performance in downstream 
+                        tasks.
+                        While preliminary research in the domain of graph analysis was driven by neural architectures, 
+                        recent studies has revealed important properties unique to graph datasets such as hierarchies and
+                        global structures. This has driven research into hyperbolic space due to their ability to 
+                        effectively encode the inherent hierarchy present in graph datasets. The research has also
+                        been subsequently applied to other domains such as NLP and computer vision to get
+                        formidable results. However, the major challenge to further growth
+                        is the obscurity of hyperbolic networks and a better comprehension
+                        of the necessary algebraic operations needed to broaden the application to different 
+                        neural network architectures. In this tutorial, we
+                        aim to introduce researchers and practitioners in the web domain
+                        to the hyperbolic equivariants of the Euclidean operations that are
+                        necessary to tackle their application to neural network architectures. 
+                        Additionally, we describe the popular hyperbolic variants of
+                        GNN architectures such as recurrent networks, convolution networks and attention networks 
+                        and explain their implementation,
+                        in contrast to the Euclidean counterparts. Furthermore, we also
+                        motivate our tutorial through existing applications in the areas of
+                        graph analysis, knowledge graph reasoning, product search, NLP,
+                        and computer vision and compare the performance gains to the
+                        Euclidean counterparts.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#!"><svg class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg><!-- <i class="fab fa-linkedin-in"></i> Font Awesome fontawesome.com --></a>
+                        <a class="social-icon" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#!"><svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com --></a>
+                        <a class="social-icon" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#!"><svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i class="fab fa-twitter"></i> Font Awesome fontawesome.com --></a>
+                        <a class="social-icon" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#!"><svg class="svg-inline--fa fa-facebook-f fa-w-10" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg><!-- <i class="fab fa-facebook-f"></i> Font Awesome fontawesome.com --></a>
+                    </div>
+                </div>
+            </section>
+            <section class="resume-section" id="teaser">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Video Introduction</h2>
+                    <style>
+                        .embed-container 
+                        { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+                        .embed-container iframe, .embed-container object, .embed-container embed 
+                        { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+                    </style>
+                    <div class="embed-container">                    
+                        <iframe src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/preview.html" width="800" height="480" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0">
+            <section class="resume-section" id="speakers">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Speakers</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <a class="navbar-brand js-scroll-trigger" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#page-top">
+                            <span class="d-block d-lg-none">Chandan Reddy</span>
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/reddy.jpeg" alt="Chandan Reddy"></span>
+                        </a>
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Chandan Reddy</h3>
+                            <div class="subheading mb-3">Professor, Department of Computer Science, Virginia Tech</div>
+                            <p>Chandan Reddy received his Ph.D. from Cornell University and M.S. from Michigan State University. 
+                                His primary research
+                                interests are Data Mining and Machine Learning with applications
+                                to Healthcare Analytics and Social Network Analysis. His research
+                                has been funded by NSF, NIH, DOE, DOT, and various industries.
+                                He has published over 140 peer-reviewed articles in leading conferences 
+                                and journals. He received several awards for his research
+                                work including the Best Application Paper Award at ACM SIGKDD
+                                conference in 2010, Best Poster Award at IEEE VAST conference in
+                                2014, Best Student Paper Award at IEEE ICDM conference in 2016,
+                                and was a finalist of the INFORMS Franz Edelman Award Competition 
+                                in 2011. He is serving on the editorial boards of ACM TKDD,
+                                ACM TIST, and IEEE Big Data journals. He is a senior member of
+                                the IEEE and distinguished member of the ACM.</p>
+                        </div>
+                        <!-- <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div> -->
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <a class="navbar-brand js-scroll-trigger" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#page-top">
+                            <span class="d-block d-lg-none">Nikhil Rao</span>
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/nikhil.jpeg" alt="Chandan Reddy"></span>
+                        </a>
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Nikhil Rao</h3>
+                            <div class="subheading mb-3">Senior Scientist, Amazon</div>
+                            <p>Nikhil Rao is a senior scientist at Amazon where he works on large
+                                scale graph modeling and algorithms to improve Amazon Search.
+                                Prior to joining Amazon, he was a researcher at Technicolor AI
+                                Labs in Palo Alto. Nikhil's research interests and expertise span
+                                large scale optimization, data modeling and mining, and developing
+                                algorithms that take advantage of structure present in the data.
+                                Nikhil has published several papers in top-tier conferences and
+                                journals. He is the recipient of the ICES Post Doctoral Fellowship
+                                award from UT Austin, and the IEEE Best Student Paper award.
+                                He holds a PhD in Electrical and Computer Engineering from UW
+                                Madison.</p>
+                        </div>
+                        <!-- <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div> -->
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <a class="navbar-brand js-scroll-trigger" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#page-top">
+                            <span class="d-block d-lg-none">Karthik Subbian</span>
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/karthik.jpeg" alt="Chandan Reddy"></span>
+                        </a>
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Karthik Subbian</h3>
+                            <div class="subheading mb-3">Principal Scientist, Amazon</div>
+                            <p>Karthik Subbian is a principal scientist at Amazon with more than
+                                17 years of industry experience. He leads a team of scientists and
+                                engineers to improve search quality and trust. He was a research
+                                scientist and lead at Facebook, before coming to Amazon, where he                                
+                                had led a team of scientists and engineers to explore information
+                                propagation and user modeling problems using the social network
+                                structure and its interactions. Earlier to that, he was working at IBM
+                                T.J. Watson research center in the Business Analytics and Mathe-
+                                matical Sciences division. His areas of expertise include machine
+                                learning, information retrieval, and large-scale network analysis.
+                                More specifically, semi-supervised and supervised learning in networks, 
+                                personalization and recommendation, information diffusion,
+                                and representation learning. He holds a masters degree from the
+                                Indian Institute of Science (IISc) and a Ph.D. from the University of
+                                Minnesota, both in computer science. Karthik has won numerous
+                                prestigious awards, including the IBM Ph.D. fellowship, best paper
+                                award at SIAM Data Mining (SDM) conference 2013, and INFORMS
+                                Edelman laureate award 2013.</p>
+                        </div>
+                        <!-- <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div> -->
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <a class="navbar-brand js-scroll-trigger" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#page-top">
+                            <span class="d-block d-lg-none">Srinivasan H. Sengamedu</span>
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/shs.png" alt="Chandan Reddy"></span>
+                        </a>
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Srinivasan H. Sengamedu</h3>
+                            <div class="subheading mb-3">Senior Machine Learning Managaer, Amazon</div>
+                            <p>Srinivasan H. Sengamedu is a Senior Machine Learning Manager
+                                at Amazon where he currently works on analysis of software using
+                                machine learning. The techniques are used in Amazon CodeGuru
+                                Reviewer. He has earlier worked on several applications of machine
+                                learning such as fake reviews, ranking problems, online advertising,
+                                information extraction, and comment spam. He has published on
+                                these topics in top-tier conferences. He holds a PhD from Indian
+                                Institute of Science.</p>
+                        </div>
+                        <!-- <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div> -->
+                    </div>
+                    <br><br>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <a class="navbar-brand js-scroll-trigger" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#page-top">
+                            <span class="d-block d-lg-none">Nurendra Choudhary</span>
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/nurendra.jpeg" alt="Chandan Reddy"></span>
+                        </a>
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Nurendra Choudhary</h3>
+                            <div class="subheading mb-3">Ph.D. student, Virginia Tech</div>
+                            <p>Nurendra Choudhary is a Ph.D. student in the department of
+                                Computer Science at Virginia Tech. His research, under advisor Dr.
+                                Chandan Reddy, is focused on representation learning in the fields
+                                of graph analysis and product search. He has published several peer-
+                                reviewed papers in top-tier conferences including WWW, NeurIPS,
+                                WSDM, and COLING. He has received his M.S. in Computational
+                                Linguistics from International Institute of Information Technology,
+                                during which he received the Best Paper Award at CICLING, 2018.</p>
+                        </div>
+                        <!-- <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div> -->
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0">
+            <section class="resume-section" id="schedule">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Schedule</h2>
+                    <div class="row">
+                        <div class="col-4">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-introduction-list" data-toggle="list" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#list-introduction" role="tab" aria-controls="introduction">Introduction &nbsp;<svg class="svg-inline--fa fa-user-clock fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M496 224c-79.6 0-144 64.4-144 144s64.4 144 144 144 144-64.4 144-144-64.4-144-144-144zm64 150.3c0 5.3-4.4 9.7-9.7 9.7h-60.6c-5.3 0-9.7-4.4-9.7-9.7v-76.6c0-5.3 4.4-9.7 9.7-9.7h12.6c5.3 0 9.7 4.4 9.7 9.7V352h38.3c5.3 0 9.7 4.4 9.7 9.7v12.6zM320 368c0-27.8 6.7-54.1 18.2-77.5-8-1.5-16.2-2.5-24.6-2.5h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h347.1c-45.3-31.9-75.1-84.5-75.1-144zm-96-112c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128z"></path></svg><!-- <i class="fas fa-user-clock"></i> Font Awesome fontawesome.com -->&nbsp;15 min</a>
+                            <a class="list-group-item list-group-item-action" id="list-theory-list" data-toggle="list" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#list-theory" role="tab" aria-controls="theory">Theory &nbsp;<svg class="svg-inline--fa fa-user-clock fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M496 224c-79.6 0-144 64.4-144 144s64.4 144 144 144 144-64.4 144-144-64.4-144-144-144zm64 150.3c0 5.3-4.4 9.7-9.7 9.7h-60.6c-5.3 0-9.7-4.4-9.7-9.7v-76.6c0-5.3 4.4-9.7 9.7-9.7h12.6c5.3 0 9.7 4.4 9.7 9.7V352h38.3c5.3 0 9.7 4.4 9.7 9.7v12.6zM320 368c0-27.8 6.7-54.1 18.2-77.5-8-1.5-16.2-2.5-24.6-2.5h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h347.1c-45.3-31.9-75.1-84.5-75.1-144zm-96-112c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128z"></path></svg><!-- <i class="fas fa-user-clock"></i> Font Awesome fontawesome.com -->&nbsp;50 min</a>
+                            <a class="list-group-item list-group-item-action" id="list-architectures-list" data-toggle="list" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#list-architectures" role="tab" aria-controls="architectures">Architectures &nbsp;<svg class="svg-inline--fa fa-user-clock fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M496 224c-79.6 0-144 64.4-144 144s64.4 144 144 144 144-64.4 144-144-64.4-144-144-144zm64 150.3c0 5.3-4.4 9.7-9.7 9.7h-60.6c-5.3 0-9.7-4.4-9.7-9.7v-76.6c0-5.3 4.4-9.7 9.7-9.7h12.6c5.3 0 9.7 4.4 9.7 9.7V352h38.3c5.3 0 9.7 4.4 9.7 9.7v12.6zM320 368c0-27.8 6.7-54.1 18.2-77.5-8-1.5-16.2-2.5-24.6-2.5h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h347.1c-45.3-31.9-75.1-84.5-75.1-144zm-96-112c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128z"></path></svg><!-- <i class="fas fa-user-clock"></i> Font Awesome fontawesome.com -->&nbsp;50 min</a>
+                            <a class="list-group-item list-group-item-action" id="list-applications-list" data-toggle="list" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#list-applications" role="tab" aria-controls="applications">Applications &nbsp;<svg class="svg-inline--fa fa-user-clock fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M496 224c-79.6 0-144 64.4-144 144s64.4 144 144 144 144-64.4 144-144-64.4-144-144-144zm64 150.3c0 5.3-4.4 9.7-9.7 9.7h-60.6c-5.3 0-9.7-4.4-9.7-9.7v-76.6c0-5.3 4.4-9.7 9.7-9.7h12.6c5.3 0 9.7 4.4 9.7 9.7V352h38.3c5.3 0 9.7 4.4 9.7 9.7v12.6zM320 368c0-27.8 6.7-54.1 18.2-77.5-8-1.5-16.2-2.5-24.6-2.5h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h347.1c-45.3-31.9-75.1-84.5-75.1-144zm-96-112c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128z"></path></svg><!-- <i class="fas fa-user-clock"></i> Font Awesome fontawesome.com -->&nbsp;50 min</a>
+                            <a class="list-group-item list-group-item-action" id="list-conclusion-list" data-toggle="list" href="file:///Users/nurendrachoudhary/hyperbolic-networks-tutorial-website/dist/index.html#list-conclusion" role="tab" aria-controls="conclusion">Conclusion and Future Work &nbsp;<svg class="svg-inline--fa fa-user-clock fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M496 224c-79.6 0-144 64.4-144 144s64.4 144 144 144 144-64.4 144-144-64.4-144-144-144zm64 150.3c0 5.3-4.4 9.7-9.7 9.7h-60.6c-5.3 0-9.7-4.4-9.7-9.7v-76.6c0-5.3 4.4-9.7 9.7-9.7h12.6c5.3 0 9.7 4.4 9.7 9.7V352h38.3c5.3 0 9.7 4.4 9.7 9.7v12.6zM320 368c0-27.8 6.7-54.1 18.2-77.5-8-1.5-16.2-2.5-24.6-2.5h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h347.1c-45.3-31.9-75.1-84.5-75.1-144zm-96-112c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128z"></path></svg><!-- <i class="fas fa-user-clock"></i> Font Awesome fontawesome.com -->&nbsp;15 min</a>
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-introduction" role="tabpanel" aria-labelledby="list-introduction-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Motivation  &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;5 min </li>
+                                    <li class="list-group-item">Relevance of Hyperbolic Neural Networks &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min</li>
+                                  </ul>
+                            </div>
+                            <div class="tab-pane fade" id="list-theory" role="tabpanel" aria-labelledby="list-theory-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Introduction to Euclidean operations  &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min </li>
+                                    <li class="list-group-item">Introduction to Hyperbolic space &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min</li>
+                                    <li class="list-group-item">Hyperbolic operations &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min</li>
+                                    <li class="list-group-item">Hyperbolic MLR and activation &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min</li>
+                                    <li class="list-group-item">Riemannian optimization &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min</li>
+                                  </ul>
+                            </div>
+                            <div class="tab-pane fade" id="list-architectures" role="tabpanel" aria-labelledby="list-architectures-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Hyperbolic Linear Layer  &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min </li>
+                                    <li class="list-group-item">Hyperbolic Recurrent Layer &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min</li>
+                                    <li class="list-group-item">Hyperbolic Convolution Layer &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min</li>
+                                    <li class="list-group-item">Hyperbolic Transformers &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min</li>
+                                    <li class="list-group-item">Hyperbolic Neural Networks ++ &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min</li>
+                                  </ul>
+                            </div>
+                            <div class="tab-pane fade" id="list-applications" role="tabpanel" aria-labelledby="list-applications-list">                                
+                                <ul class="list-group">
+                                    <li class="list-group-item">Graph Applications &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min </li>
+                                    <li class="list-group-item">Knowledge Graph Reasoning &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min</li>
+                                    <li class="list-group-item">Product Search &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min</li>
+                                    <li class="list-group-item">Natural Language Processing &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min</li>
+                                    <li class="list-group-item">Computer Vision &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;10 min</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="list-conclusion" role="tabpanel" aria-labelledby="list-conclusion-list">
+                                <li class="list-group-item">Summary  &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;5 min </li>
+                                <li class="list-group-item">Broader Impact  &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;5 min </li>
+                                <li class="list-group-item">Future Directions  &nbsp;<svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg><!-- <i class="fas fa-clock"></i> Font Awesome fontawesome.com -->&nbsp;5 min </li>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </section></div>
+            
+            <hr class="m-0">
+            <section class="resume-section" id="tree">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Topic Tree</h2>
+                    <img src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/taxonomy.png" class="img-fluid" alt="Responsive image" width="75%">
+                </div>
+            </section>
+            <hr class="m-0">
+
+            <hr class="m-0">
+            <!-- Awards-->
+            <section class="resume-section" id="resources">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Resources</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li" style="color: #BD5D38;"><svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com --></span>
+                            Code coming soon!
+                        </li>
+                        <li>
+                            <span class="fa-li" style="color: #BD5D38;"><svg class="svg-inline--fa fa-book-open fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"></path></svg><!-- <i class="fas fa-book-open"></i> Font Awesome fontawesome.com --></span>
+                            Choudhary, N., Rao, N., Katariya, S., Subbian, K., &amp; Reddy, C. K. (2021, April). Self-Supervised Hyperboloid Representations from Logical Queries over Knowledge Graphs. In Proceedings of the Web Conference 2021 (pp. 1373-1384).
+                        </li>
+                        <li>
+                            <span class="fa-li" style="color: #BD5D38;"><svg class="svg-inline--fa fa-book-open fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"></path></svg><!-- <i class="fas fa-book-open"></i> Font Awesome fontawesome.com --></span>
+                            Choudhary, N., Rao, N., Katariya, S., Subbian, K., &amp; Reddy, C. (2021). Probabilistic Entity Representation Model for Reasoning over Knowledge Graphs. Advances in Neural Information Processing Systems, 34.
+                        </li>
+                        <li>
+                            <span class="fa-li" style="color: #BD5D38;"><svg class="svg-inline--fa fa-book-open fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"></path></svg><!-- <i class="fas fa-book-open"></i> Font Awesome fontawesome.com --></span>
+                            Chami, I., Ying, Z., Ré, C., &amp; Leskovec, J. (2019). Hyperbolic graph convolutional neural networks. Advances in neural information processing systems, 32, 4868-4879.
+                        </li>
+                        <li>                            
+                            <span class="fa-li" style="color: #BD5D38;"><svg class="svg-inline--fa fa-book-open fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"></path></svg><!-- <i class="fas fa-book-open"></i> Font Awesome fontawesome.com --></span>
+                            Ganea, O. E., Bécigneul, G., &amp; Hofmann, T. (2018). Hyperbolic neural networks. Advances in neural information processing systems, 5345-5355.
+                        </li>
+                        <li>
+                            <span class="fa-li" style="color: #BD5D38;"><svg class="svg-inline--fa fa-book-open fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"></path></svg><!-- <i class="fas fa-book-open"></i> Font Awesome fontawesome.com --></span>
+                            Shimizu, R., Mukuta, Y., &amp; Harada, T. (2021). Hyperbolic neural networks++. International Conference on Learning Representations.
+
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        
+        <!-- Bootstrap core JS-->
+        <script src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/scripts.js"></script>
+        <script src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="./Hyperbolic Networks_ Theory, Architectures and Applications_files/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+</body></html>

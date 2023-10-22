@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109862473-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109862473-1');
+        </script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Tutorial on Hyperbolic Networks: Theory, Architectures and Applications. Presented at
+        AAAI 2023, KDD 2022, and TheWebConf 2022."/>
+
+        <meta name="author" content="Nurendra Choudhary" />
+        <title>Hyperbolic Networks: Theory, Architectures and Applications</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+        <!-- Font Awesome icons (free version)-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Tutorial</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#video">Tutorial Video</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#taxonomy">Taxonomy</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resources">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li> -->
+                </ul>
+            </div>
+            <span class="d-block d-lg-none">Virginia Tech</span>
+            <span class="d-none d-lg-block" style="background-color: rgb(300, 300, 300)";>
+                <a href="https://sanghani.cs.vt.edu/" target="_blank" rel="noopener noreferrer">
+                    <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/vt.png" width="70%" alt="Virginia Tech"/>
+                </a>
+            </span>
+            <span class="d-block d-lg-none">Amazon</span>
+            <span class="d-none d-lg-block" style="background-color: rgb(300, 300, 300)";>
+                <a href="https://www.amazon.science/" target="_blank" rel="noopener noreferrer">
+                    <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/amazon.png" width="80%" alt="Amazon" />
+                </a>
+            </span>
+            <span class="d-block d-lg-none">AAAI2023</span>
+            <span class="d-none d-lg-block" style="background-color: rgb(300, 300, 300)";>
+                <a href="https://aaai.org/Conferences/AAAI-23/" target="_blank" rel="noopener noreferrer">
+                    <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/aaai-logo.jpeg" width="70%" alt="AAAI2023" />
+                </a>
+            </span>
+            <span class="d-block d-lg-none">SIGKDD2022</span>
+            <span class="d-none d-lg-block" style="background-color: rgb(300, 300, 300)";>
+                <a href="https://kdd.org/kdd2022/index.html" target="_blank" rel="noopener noreferrer">
+                    <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/kdd2022_logo.jpeg" width="100%" alt="SIGKDD2022" />
+                </a>
+            </span>
+            <span class="d-block d-lg-none">TheWebConf22</span>
+            <span class="d-none d-lg-block" style="background-color: rgb(300, 300, 300)";>
+                <a href="https://www2022.thewebconf.org/" target="_blank" rel="noopener noreferrer">
+                    <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/twc22.png" width="70%" alt="TheWebConf22" />
+                </a>
+            </span>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <section class="resume-section" id="overview">
+                <div class="resume-section-content">
+                    <h2 class="mb-0">
+                        Hyperbolic Networks:<br>
+                        <span class="text-primary">Theory, Architectures and Applications</span>
+                    </h2>
+                    <h5 class="mb-5" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+                        Tutorial @ <a href="aaai-2023/index.html">AAAI 2023</a> · <a href="kdd-2022/index.html">KDD 2022</a> · <a href="www-2022/index.html">TheWebConf 2022</a> 
+                    </h5>
+                    <h5 lass="mb-5" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+                    <i class="fab fa-github"></i></span> Code Library:
+                    <a href="https://github.com/reddy-lab/GraphZoo" target="_blank"><b>GraphZoo: </b>Facilitating learning, using, and designing graph processing pipelines</a>
+                  </h5>
+                    <nav>
+                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-motivation-tab" data-bs-toggle="tab" data-bs-target="#nav-motivation" type="button" role="tab" aria-controls="nav-motivation" aria-selected="true">Motivation</button>
+                        <button class="nav-link" id="nav-theory-tab" data-bs-toggle="tab" data-bs-target="#nav-theory" type="button" role="tab" aria-controls="nav-theory" aria-selected="false">Theory</button>
+                        <button class="nav-link" id="nav-architectures-tab" data-bs-toggle="tab" data-bs-target="#nav-architectures" type="button" role="tab" aria-controls="nav-architectures" aria-selected="false">Architectures</button>
+                        <button class="nav-link" id="nav-applications-tab" data-bs-toggle="tab" data-bs-target="#nav-applications" type="button" role="tab" aria-controls="nav-applications" aria-selected="false">Applications</button>
+                        <button class="nav-link" id="nav-future-tab" data-bs-toggle="tab" data-bs-target="#nav-future" type="button" role="tab" aria-controls="nav-future" aria-selected="false">Future</button>
+                      </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="nav-motivation" role="tabpanel" aria-labelledby="nav-motivation-tab">
+                        <embed src="assets/img/Motivation.pdf" type="application/pdf" width="80%"  height="500"></embed>
+                      </div>
+                      <div class="tab-pane fade" id="nav-theory" role="tabpanel" aria-labelledby="nav-theory-tab">
+                        <embed src= "assets/img/Theory.pdf" type="application/pdf" width="80%"  height="500"></embed>
+                      </div>
+                      <div class="tab-pane fade" id="nav-architectures" role="tabpanel" aria-labelledby="nav-architectures-tab">
+                        <embed src= "assets/img/Architectures.pdf" type="application/pdf" width="80%" height="500"></embed>
+                      </div>
+                      <div class="tab-pane fade" id="nav-applications" role="tabpanel" aria-labelledby="nav-applications-tab">
+                        <embed src= "assets/img/Applications.pdf" type="application/pdf" width="80%" height="500"></embed>
+                      </div>
+                      <div class="tab-pane fade" id="nav-future" role="tabpanel" aria-labelledby="nav-future-tab">
+                        <embed src= "assets/img/Future.pdf" type="application/pdf" width="80%" height="500"></embed>
+                      </div>
+                    </div>
+                      <p class="lead mb-5">Graphs are ubiquitous data-structures that are widely-used in a
+                        number of data storage scenarios, including social networks, recommender systems,
+                        knowledge graphs and e-commerce. This has led to a rise of GNN architectures to
+                        analyze and encode information from the graphs for better performance in downstream
+                        tasks.
+                        While preliminary research in the domain of graph analysis was driven by neural architectures,
+                        recent studies has revealed important properties unique to graph datasets such as hierarchies and
+                        global structures. This has driven research into hyperbolic space due to their ability to
+                        effectively encode the inherent hierarchy present in graph datasets. The research has also
+                        been subsequently applied to other domains such as NLP and computer vision to get
+                        formidable results. However, the major challenge to further growth
+                        is the obscurity of hyperbolic networks and a better comprehension
+                        of the necessary algebraic operations needed to broaden the application to different
+                        neural network architectures. In this tutorial, we
+                        aim to introduce researchers and practitioners in the web domain
+                        to the hyperbolic equivariants of the Euclidean operations that are
+                        necessary to tackle their application to neural network architectures.
+                        Additionally, we describe the popular hyperbolic variants of
+                        GNN architectures such as recurrent networks, convolution networks and attention networks
+                        and explain their implementation,
+                        in contrast to the Euclidean counterparts. Furthermore, we also
+                        motivate our tutorial through existing applications in the areas of
+                        graph analysis, knowledge graph reasoning, product search, NLP,
+                        and computer vision and compare the performance gains to the
+                        Euclidean counterparts.</p>
+
+                </div>
+            </section>
+            <section class="resume-section" id="video">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Tutorial Video (TheWeb Conf 2022)</h2>
+                    <style>
+                        .embed-container
+                        { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+                        .embed-container iframe, .embed-container object, .embed-container embed
+                        { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+                    </style>
+                    <div class='embed-container'>
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JHN_AKi25wU" title="Tutorial on Hyperbolic Neural Networks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="schedule">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Schedule</h2>
+                    <div class="row">
+                        <div class="col-4">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-introduction-list" data-toggle="list" href="#list-introduction" role="tab" aria-controls="introduction">Introduction &nbsp;<i class="fas fa-user-clock"></i>&nbsp;15 min</a>
+                            <a class="list-group-item list-group-item-action" id="list-theory-list" data-toggle="list" href="#list-theory" role="tab" aria-controls="theory">Theory &nbsp;<i class="fas fa-user-clock"></i>&nbsp;50 min</a>
+                            <a class="list-group-item list-group-item-action" id="list-architectures-list" data-toggle="list" href="#list-architectures" role="tab" aria-controls="architectures">Architectures &nbsp;<i class="fas fa-user-clock"></i>&nbsp;50 min</a>
+                            <a class="list-group-item list-group-item-action" id="list-applications-list" data-toggle="list" href="#list-applications" role="tab" aria-controls="applications">Applications &nbsp;<i class="fas fa-user-clock"></i>&nbsp;50 min</a>
+                            <a class="list-group-item list-group-item-action" id="list-conclusion-list" data-toggle="list" href="#list-conclusion" role="tab" aria-controls="conclusion">Conclusion and Future Work &nbsp;<i class="fas fa-user-clock"></i>&nbsp;15 min</a>
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-introduction" role="tabpanel" aria-labelledby="list-introduction-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Motivation  &nbsp;<i class="fas fa-clock"></i>&nbsp;5 min </li>
+                                    <li class="list-group-item">Relevance of Hyperbolic Neural Networks &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min</li>
+                                  </ul>
+                            </div>
+                            <div class="tab-pane fade" id="list-theory" role="tabpanel" aria-labelledby="list-theory-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Introduction to Euclidean operations  &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min </li>
+                                    <li class="list-group-item">Introduction to Hyperbolic space &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min</li>
+                                    <li class="list-group-item">Hyperbolic operations &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min</li>
+                                    <li class="list-group-item">Hyperbolic MLR and activation &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min</li>
+                                    <li class="list-group-item">Riemannian optimization &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min</li>
+                                  </ul>
+                            </div>
+                            <div class="tab-pane fade" id="list-architectures" role="tabpanel" aria-labelledby="list-architectures-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Hyperbolic Linear Layer  &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min </li>
+                                    <li class="list-group-item">Hyperbolic Recurrent Layer &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min</li>
+                                    <li class="list-group-item">Hyperbolic Convolution Layer &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min</li>
+                                    <li class="list-group-item">Hyperbolic Transformers &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min</li>
+                                    <li class="list-group-item">Hyperbolic Neural Networks ++ &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min</li>
+                                  </ul>
+                            </div>
+                            <div class="tab-pane fade" id="list-applications" role="tabpanel" aria-labelledby="list-applications-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Graph Applications &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min </li>
+                                    <li class="list-group-item">Knowledge Graph Reasoning &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min</li>
+                                    <li class="list-group-item">Product Search &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min</li>
+                                    <li class="list-group-item">Natural Language Processing &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min</li>
+                                    <li class="list-group-item">Computer Vision &nbsp;<i class="fas fa-clock"></i>&nbsp;10 min</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="list-conclusion" role="tabpanel" aria-labelledby="list-conclusion-list">
+                                <li class="list-group-item">Summary  &nbsp;<i class="fas fa-clock"></i>&nbsp;5 min </li>
+                                <li class="list-group-item">Broader Impact  &nbsp;<i class="fas fa-clock"></i>&nbsp;5 min </li>
+                                <li class="list-group-item">Future Directions  &nbsp;<i class="fas fa-clock"></i>&nbsp;5 min </li>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="taxonomy">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Taxonomy</h2>
+                    <img src="assets/img/taxonomy.png" class="img-fluid" alt="Responsive image" width="75%">
+                </div>
+            </section>
+            <hr class="m-0" />
+
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="resources">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Resources</h2>
+                    <ul class="fa-ul mb-0">
+                        <!-- <li>
+                          <span class="fa-li" style="color: #BD5D38;"><i class="fab fa-github"></i></span> Code Library:
+                          <a href="https://github.com/reddy-lab/GraphZoo"><b>GraphZoo: </b>Facilitating learning, using, and designing graph processing pipelines/models systematically.</a>
+                        </li>
+                        <li>
+                          <span class="fa-li" style="color: #BD5D38;"><i class="fas fa-file-powerpoint"></i></span> Slides:
+                          [<a href="assets/img/tutorial1.pdf" target="_blank">pdf</a>]
+                          [<a href="https://virginiatech-my.sharepoint.com/:p:/g/personal/nurendra_vt_edu/EbCfL5NYB8BLp7jJEDILVAYBfnfLu6-tHHkghWn_-3N5Ig?e=jaovYi" target="_blank">ppt</a>]
+                        </li> -->
+                        <li>
+                            <span class="fa-li" style="color: #BD5D38;"><i class="fas fa-book-open"></i></span>
+                            Choudhary, N., Rao, N., Katariya, S., Subbian, K., & Reddy, C. K. (2022, February). ANTHEM: Attentive Hyperbolic Entity Model for Product Search. In Proceedings of the International Conference on Web Search and Data Mining 2022.
+                            (<a href="https://people.cs.vt.edu/~reddy/papers/WSDM22.pdf" target="_blank" rel="noopener noreferrer">pdf</a>)
+                        </li>
+                        <li>
+                            <span class="fa-li" style="color: #BD5D38;"><i class="fas fa-book-open"></i></span>
+                            Choudhary, N., Rao, N., Katariya, S., Subbian, K., & Reddy, C. (2021). Probabilistic Entity Representation Model for Reasoning over Knowledge Graphs. Advances in Neural Information Processing Systems, 34.
+                            (<a href="https://people.cs.vt.edu/~reddy/papers/NeurIPS21.pdf" target="_blank" rel="noopener noreferrer">pdf</a>)
+                        </li>
+                        <li>
+                            <span class="fa-li" style="color: #BD5D38;"><i class="fas fa-book-open"></i></span>
+                            Choudhary, N., Rao, N., Katariya, S., Subbian, K., & Reddy, C. K. (2021, April). Self-Supervised Hyperboloid Representations from Logical Queries over Knowledge Graphs. In Proceedings of the Web Conference 2021 (pp. 1373-1384).
+                            (<a href="https://people.cs.vt.edu/~reddy/papers/WWW21a.pdf" target="_blank" rel="noopener noreferrer">pdf</a>)
+                        </li>
+                        <li>
+                            <span class="fa-li" style="color: #BD5D38;"><i class="fas fa-book-open"></i></span>
+                            Chami, I., Ying, Z., Ré, C., & Leskovec, J. (2019). Hyperbolic graph convolutional neural networks. Advances in neural information processing systems, 32, 4868-4879.
+                            (<a href="https://arxiv.org/pdf/1910.12933.pdf" target="_blank" rel="noopener noreferrer">pdf</a>)
+                        </li>
+                        <li>
+                            <span class="fa-li" style="color: #BD5D38;"><i class="fas fa-book-open"></i></span>
+                            Ganea, O. E., Bécigneul, G., & Hofmann, T. (2018). Hyperbolic neural networks. Advances in neural information processing systems, 5345-5355.
+                            (<a href="https://arxiv.org/pdf/1805.09112.pdf" target="_blank" rel="noopener noreferrer">pdf</a>)
+                        </li>
+                        <li>
+                            <span class="fa-li" style="color: #BD5D38;"><i class="fas fa-book-open"></i></span>
+                            Shimizu, R., Mukuta, Y., & Harada, T. (2021). Hyperbolic neural networks++. International Conference on Learning Representations.
+                            (<a href="https://arxiv.org/pdf/2006.08210.pdf" target="_blank" rel="noopener noreferrer">pdf</a>)
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="speakers">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Speakers</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <a class="navbar-brand js-scroll-trigger" href="https://nurendra.me/">
+                            <span class="d-block d-lg-none">Nurendra Choudhary</span>
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/nurendra.jpeg" alt="Chandan Reddy" /></span>
+                        </a>
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Nurendra Choudhary</h3>
+                            <div class="subheading mb-3">Ph.D. student, Virginia Tech</div>
+                            <p>Nurendra Choudhary is a Ph.D. student in the department of
+                                Computer Science at Virginia Tech. His research, under advisor Dr.
+                                Chandan Reddy, is focused on representation learning in the fields
+                                of graph analysis and product search. He has published several peer-
+                                reviewed papers in top-tier conferences including WWW, NeurIPS, KDD,
+                                WSDM, and COLING. He has received his M.S. in Computational
+                                Linguistics from International Institute of Information Technology,
+                                during which he received the Best Paper Award at CICLING, 2018.</p>
+                        </div>
+                        <!-- <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div> -->
+                    </div>
+                    <br><br>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <a class="navbar-brand js-scroll-trigger" href="https://sites.google.com/view/raonikhil/home">
+                            <span class="d-block d-lg-none">Nikhil Rao</span>
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/nikhil.jpeg" alt="Chandan Reddy" /></span>
+                        </a>
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Nikhil Rao</h3>
+                            <div class="subheading mb-3">Senior Scientist, Amazon</div>
+                            <p>Nikhil Rao is a senior scientist at Amazon where he works on large
+                                scale graph modeling and algorithms to improve Amazon Search.
+                                Prior to joining Amazon, he was a researcher at Technicolor AI
+                                Labs in Palo Alto. Nikhil's research interests and expertise span
+                                large scale optimization, data modeling and mining, and developing
+                                algorithms that take advantage of structure present in the data.
+                                Nikhil has published several papers in top-tier conferences and
+                                journals. He is the recipient of the ICES Post Doctoral Fellowship
+                                award from UT Austin, and the IEEE Best Student Paper award.
+                                He holds a PhD in Electrical and Computer Engineering from UW
+                                Madison.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <a class="navbar-brand js-scroll-trigger" href="https://sites.google.com/site/mailtosuka/">
+                            <span class="d-block d-lg-none">Karthik Subbian</span>
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/karthik.jpeg" alt="Chandan Reddy" /></span>
+                        </a>
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Karthik Subbian</h3>
+                            <div class="subheading mb-3">Principal Scientist, Amazon</div>
+                            <p>Karthik Subbian is a principal scientist at Amazon with more than
+                                17 years of industry experience. He leads a team of scientists and
+                                engineers to improve search quality and trust. He was a research
+                                scientist and lead at Facebook, before coming to Amazon, where he
+                                had led a team of scientists and engineers to explore information
+                                propagation and user modeling problems using the social network
+                                structure and its interactions. Earlier to that, he was working at IBM
+                                T.J. Watson research center in the Business Analytics and Mathe-
+                                matical Sciences division. His areas of expertise include machine
+                                learning, information retrieval, and large-scale network analysis.
+                                More specifically, semi-supervised and supervised learning in networks,
+                                personalization and recommendation, information diffusion,
+                                and representation learning. He holds a masters degree from the
+                                Indian Institute of Science (IISc) and a Ph.D. from the University of
+                                Minnesota, both in computer science. Karthik has won numerous
+                                prestigious awards, including the IBM Ph.D. fellowship, best paper
+                                award at SIAM Data Mining (SDM) conference 2013, and INFORMS
+                                Edelman laureate award 2013.</p>
+                        </div>
+                        <!-- <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div> -->
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <a class="navbar-brand js-scroll-trigger" href="https://www.amazon.science/author/srinivasan-h-sengamedu">
+                            <span class="d-block d-lg-none">Srinivasan H. Sengamedu</span>
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/shs.png" alt="Chandan Reddy" /></span>
+                        </a>
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Srinivasan H. Sengamedu</h3>
+                            <div class="subheading mb-3">Senior Machine Learning Manager, Amazon</div>
+                            <p>Srinivasan H. Sengamedu is a Senior Machine Learning Manager
+                                at Amazon where he currently works on analysis of software using
+                                machine learning. The techniques are used in Amazon CodeGuru
+                                Reviewer. He has earlier worked on several applications of machine
+                                learning such as fake reviews, ranking problems, online advertising,
+                                information extraction, and comment spam. He has published on
+                                these topics in top-tier conferences. He holds a PhD from Indian
+                                Institute of Science.</p>
+                        </div>
+                        <!-- <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div> -->
+                    </div>
+                    <br><br>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <a class="navbar-brand js-scroll-trigger" href="https://people.cs.vt.edu/~reddy/">
+                            <span class="d-block d-lg-none">Chandan Reddy</span>
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/reddy.jpeg" alt="Chandan Reddy" /></span>
+                        </a>
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Chandan Reddy</h3>
+                            <div class="subheading mb-3">Professor, Department of Computer Science, Virginia Tech</div>
+                            <p>Chandan Reddy received his Ph.D. from Cornell University and M.S. from Michigan State University.
+                                His primary research
+                                interests are Data Mining and Machine Learning with applications
+                                to Healthcare Analytics and Social Network Analysis. His research
+                                has been funded by NSF, NIH, DOE, DOT, and various industries.
+                                He has published over 140 peer-reviewed articles in leading conferences
+                                and journals. He received several awards for his research
+                                work including the Best Application Paper Award at ACM SIGKDD
+                                conference in 2010, Best Poster Award at IEEE VAST conference in
+                                2014, Best Student Paper Award at IEEE ICDM conference in 2016,
+                                and was a finalist of the INFORMS Franz Edelman Award Competition
+                                in 2011. He is serving on the editorial boards of ACM TKDD,
+                                ACM TIST, and IEEE Big Data journals. He is a senior member of
+                                the IEEE and distinguished member of the ACM.</p>
+                        </div>
+                        <!-- <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
